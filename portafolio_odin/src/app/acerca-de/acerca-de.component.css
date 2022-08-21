@@ -1,0 +1,33 @@
+.container{
+    margin-top: -70px;
+}
+
+.imagen-perfil{
+    display: block; margin-left: auto; margin-right: auto;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+  
+.datos-acerca{
+    margin-top: 20px;
+    padding: 0px 15px;
+    text-align: center;
+}
+.texto-acerca{
+    border-left: 3px solid;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 160px;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.datos-acerca span {
+    font-size: 14px;
+    background-color: rgb(246, 246, 246);
+    padding: 5px 10px;
+
+}

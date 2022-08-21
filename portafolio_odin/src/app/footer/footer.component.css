@@ -1,0 +1,13 @@
+footer{
+    background-color: #2d2c2c;
+    position: sticky;
+    z-index: 999;
+    width: 100%;
+    padding: 15px 25px 15px 25px;
+    color:white;
+    }
+
+.hecho-por{
+    text-align: right;
+
+}

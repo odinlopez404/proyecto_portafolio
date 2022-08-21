@@ -1,0 +1,20 @@
+.experiencia{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    background-color: black;
+    font-size:25px;
+    color:white;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.experiencia-img{
+    height: 190px;
+    width: 190px;
+    position:flex;
+    
+}
+
+.container{
+    border: 1px;
+}
