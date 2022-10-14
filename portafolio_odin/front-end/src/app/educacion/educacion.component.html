@@ -1,0 +1,18 @@
+<div id="educacion">
+    <div class="container">
+        <div class="educacion">Educación</div>
+        <div class="row" *ngFor="let educaciones of educaciones">
+          <div class="col-md-1">             
+            <img class="educacion-img" src="../../assets/cuadro.png"></div> 
+          <div class="col-md-11">
+            <h3>{{educaciones.tituloEducacion}} 
+              <a class="boton-crud-editar" role="button" data-placement="top" data-toogle="tooltips" data-original-title="Edit"><span><fa-icon [icon]="Edit"></fa-icon></span></a>
+              <a class="boton-crud-eliminar" role="button" data-placement="top" data-toogle="tooltips" data-original-title="Delete"><span><fa-icon [icon]="Delete"></fa-icon></span></a>
+            </h3>
+              
+              <p class="cargo">Pasante</p>
+                <p class="descripcion">
+                  {{educaciones.descripcionEducacion}}</p>
+                <div class="fecha">{{educaciones.fechaEducacionDesde}} – {{educaciones.fechaEducacionHasta}}</div>
+          </div>
+</div>
