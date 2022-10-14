@@ -14,18 +14,25 @@ public class EducacionService {
     private final EducacionRepo educacionRepo;
 
     @Autowired
-    public EducacionService(EducacionRepo educacionRepo) { this.educacionRepo = educacionRepo;  }
-    public Educacion agregarEducacion(Educacion educacion) { return educacionRepo.save(educacion);  }
-    
-    public List<Educacion> buscarEducacion() {   return educacionRepo.findAll();    }
-    
+    public EducacionService(EducacionRepo educacionRepo) {
+        this.educacionRepo = educacionRepo;
+    }
+
+    public Educacion agregarEducacion(Educacion educacion) {
+        return educacionRepo.save(educacion);
+    }
+
+    public List<Educacion> buscarEducacion() {
+        return educacionRepo.findAll();
+    }
+
     public Educacion editarEducacion(Educacion educacion) {
         return educacionRepo.save(educacion);
     }
-    
+
     public void borrarEducacion(Long id) {
 
         educacionRepo.deleteById(id);
     }
-    
+
 }

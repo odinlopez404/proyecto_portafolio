@@ -1,4 +1,7 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Experiencia } from '../modelos/experiencia';
+import { ExperienciaService } from '../servicios/experiencia.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,9 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienciaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private experienciaService:ExperienciaService) {}
+    public experiencias:Experiencia[]=[];
+   
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+      this.getExperiencias();
+    }
 
-}
+    public getExperiencias():void{
+      this.experienciaService.getExperiencia().subscribe(
+        {next:(Response:Experiencia[])=>{
+          this.experiencias=Response;
+        },
+      error:(error:HttpErrorResponse)=>{
+        alert(error.message);
+      }
+      }
+      )
+        }
+      }
