@@ -1,19 +1,22 @@
 <div class="container">
-    <div class="row ">
-  
+    <div class="row" *ngIf="usuario">
+
       <div class="col-md-3">
-        <img class="imagen-perfil" src="../../assets/odin.jpg" alt="Imagen de perfil" />
+        <img class="imagen-perfil" src="{{usuario.imagenUsuario}}" alt="Imagen de perfil" />
+        
         <div class="datos-acerca">
-        <h1>Odin López</h1>
-        <span>Programador Full Stack & Técnico IT</span>
-    </div>
+        <h1>{{usuario.nombre}} {{usuario.apellido}}        <div class="crud-menu-user">
+          <a class="botones-crud" role="button" data-placement="top" data-toogle="tooltips" data-original-title="Edit"><span><fa-icon [icon]="Edit"></fa-icon></span></a>
+      </div></h1>
+        <span>{{usuario.titulo}}</span> </div>
+        
       </div>
+      
   
       <div class="col-md-9">
         <div class="texto-acerca">
-        Soy una persona entusiasta de la tecnologia, familiarizado de forma autodidacta con el entorno informatico desde los 12 años, edad en la que ya estaba realizando maquetas web con el lenguage de hipertexto (HTML), posteriormente me gradue como tecnico en informatica en una escuela tecnica. Hoy en dia cuento con conocimientos más amplios en el mundo del desarrollo web.
-        </div>
-    </div>
+        {{usuario.descripcion}}
+        </div></div>
   
-    </div>
-  </div>
+    </div> </div>
+  

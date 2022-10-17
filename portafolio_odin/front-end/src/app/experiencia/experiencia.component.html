@@ -1,19 +1,20 @@
     <div class="container">
         <div class="experiencia">Experiencia</div>
-        <div class="row">       
+        <div class="row" *ngFor="let experiencia of experiencias">       
           <div class="col-md-2">             
-            <img class="experiencia-img" src="../../assets/cuadro.png"></div> 
+            <img class="experiencia-img" src="{{experiencia.imagenExperiencia}}"></div> 
           <div class="col-md-10">
-            <h3>MASISA, S.A</h3>
-              <p class="cargo">Pasante</p>
+            <h3>{{experiencia.empresaExperiencia}}
+              <div class="crud-menu">
+              <a class="botones-crud" role="button" data-placement="top" data-toogle="tooltips" data-original-title="Edit"><span><fa-icon [icon]="Edit"></fa-icon></span></a>
+              <a class="botones-crud" role="button" data-placement="top" data-toogle="tooltips" data-original-title="Delete"><span><fa-icon [icon]="Delete"></fa-icon></span></a>
+              </div></h3>
+           
+              <p class="cargo">{{experiencia.cargoExperiencia}}</p>
                 <p class="descripcion">
-                Durante la realización de la pasantia en el area IT de la empresa, estuvo bajo mi responsabilidad el mantenimiento preventivo y correctivo del hardware y software, realizacion de respaldos, instalacion de sistemas operativos en equipos nuevos.    
+                  {{experiencia.descripcionExperiencia}}    
                 </p>
-                <div class="fecha">Septiembre 2015 – Diciembre 2015</div>
+                <div class="fecha">{{experiencia.fechaDesdeExperiencia}} – {{experiencia.fechaHastaExperiencia}}</div>
           </div>
 
-          <div class="row" *ngFor="let experiencia of experiencias">
-
-          {{experiencia.descripcionExperiencia}}
-          </div>
 </div>

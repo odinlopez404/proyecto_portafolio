@@ -2,3 +2,36 @@
     font-size: 16px;
     font-family: 'Open Sans';
 }
+
+.crud-menu{
+    background-color: rgba(0, 0, 0, 0.032);
+    padding: 4px 10px;
+    border-radius: 7px;
+    display: inline;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.113);
+}
+
+.crud-menu .botones-crud{
+    padding: 0px 5px;
+    color:rgb(17, 17, 17);
+}
+.crud-menu .botones-crud :hover{
+    color:rgb(87, 87, 87);
+}
+
+.crud-menu-user{
+    padding: 10px 0px;
+}
+
+
+.crud-menu-user .botones-crud{
+    background-color: rgba(0, 0, 0, 0.032);
+    padding: 4px 4px;
+    border-radius: 7px;
+    display: inline;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.113);
+    color:rgb(17, 17, 17);
+}
+.crud-menu-user .botones-crud :hover{
+    color:rgb(87, 87, 87);
+}

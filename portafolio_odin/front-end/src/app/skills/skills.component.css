@@ -1,5 +1,6 @@
 
 .skill-title{
+    display:inline-flex;
     font-size:20px;
 
 }
